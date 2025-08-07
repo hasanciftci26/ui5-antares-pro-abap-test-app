@@ -44,12 +44,16 @@
     }
   },
   "sap.ui5": {
-    "flexEnabled": true,
+    "flexEnabled": false,
+    "resourceRoots": {
+      "ui5.antares.pro": "./resources/ui5/antares/pro"
+    },
     "dependencies": {
       "minUI5Version": "1.120.14",
       "libs": {
         "sap.m": {},
-        "sap.ui.core": {}
+        "sap.ui.core": {},
+        "ui5.antares.pro": {}
       }
     },
     "contentDensities": {

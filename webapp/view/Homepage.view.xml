@@ -1,6 +1,50 @@
-<mvc:View controllerName="test.ui5.antares.pro.employeeui.controller.Homepage"
+<mvc:View
+    controllerName="test.ui5.antares.pro.employeeui.controller.Homepage"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <Table items="{/EmployeeSet}">
+                <headerToolbar>
+                    <OverflowToolbar>
+                        <ToolbarSpacer />
+                        <OverflowToolbarButton
+                            icon="sap-icon://add"
+                            press="onCreateNewEmployee"
+                        />
+                    </OverflowToolbar>
+                </headerToolbar>
+                <columns>
+                    <Column>
+                        <header>
+                            <Label text="Employee ID" />
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Label text="First Name" />
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Label text="Last Name" />
+                        </header>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{ID}" />
+                            <Text text="{FirstName}" />
+                            <Text text="{LastName}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
     </Page>
 </mvc:View>
