@@ -13,6 +13,7 @@ builder:
     - name: deploy-to-abap
       afterTask: generateCachebusterInfo
       configuration:
+        ignoreCertError: true
         target:
           url: https://sbxs24.solco.global.nttdata.com:44300
           client: '200'
