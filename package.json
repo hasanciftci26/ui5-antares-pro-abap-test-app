@@ -16,7 +16,7 @@
     "@sap/ux-ui5-tooling": "1",
     "@ui5/cli": "^4.0.16",
     "rimraf": "^5.0.5",
-    "ui5-antares-pro-proxy": "^1.0.0"
+    "ui5-antares-pro-proxy": "^1.0.1"
   },
   "scripts": {
     "start": "fiori run --open \"test/flp.html#app-preview\"",
